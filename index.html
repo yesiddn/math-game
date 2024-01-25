@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Math game</title>
+</head>
+
+<body>
+  <main>
+    <section class="home">
+      <h2>Math game</h2>
+      <button type="button" class="home__play">Jugar</button>
+    </section>
+
+    <section class="tables inactive">
+      <h2>Selecciona un número:</h2>
+      <div class="tables__container">
+        <button type="button" class="tables__number" onclick="startGame(2)">2</button>
+        <button type="button" class="tables__number" onclick="startGame(3)">3</button>
+        <button type="button" class="tables__number" onclick="startGame(4)">4</button>
+        <button type="button" class="tables__number" onclick="startGame(5)">5</button>
+        <button type="button" class="tables__number" onclick="startGame(6)">6</button>
+        <button type="button" class="tables__number" onclick="startGame(7)">7</button>
+        <button type="button" class="tables__number" onclick="startGame(8)">8</button>
+        <button type="button" class="tables__number" onclick="startGame(9)">9</button>
+        <button type="button" class="tables__number" onclick="startGame(10)">10</button>
+      </div>
+    </section>
+
+    <section class="game inactive">
+      <h2>Nivel <span class="game__level"></span></h2>
+
+      <p>¿Cuánto es <span class="number-one">2</span> &times; <span class="number-two">2</span>?</p>
+
+      <div class="game__container">
+        <div class="game__header">
+          <div class="game__header__question">
+            <p><span class="number-one">2</span> &times; <span class="number-two">2</span></p>
+            <p class="game__header__question__help">2 + 2</p>
+          </div>
+
+          <span class="game__equal"> = </span>
+
+          <div class="game__header__answer"></div>
+        </div>
+
+        <div class="game__answers">
+          <button type="button" class="game__answer">1</button>
+          <button type="button" class="game__answer">2</button>
+          <button type="button" class="game__answer">3</button>
+          <button type="button" class="game__answer">4</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="game__level-status inactive">
+      <h2 class="status__title">¡Felicidades!</h2>
+      <p class="status__info">Has completado el nivel:</p>
+      <span class="status__level">2</span>
+      <p class="status__answer--info">Respuesta correcta:</p>
+      <span class="status__answer">4</span>
+      <button type="button" class="status__next">Siguiente nivel</button>
+    </section>
+
+    <section class="screen-portrait">
+      <h2>Por favor, gire su celuar</h2>
+      <span></span>
+    </section>
+  </main>
+
+  <!-- <script src="./index.js"></script> -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
