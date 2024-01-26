@@ -320,7 +320,7 @@ body {
     display: inline-block;
     width: 128px;
     height: 128px;
-    background: url('./svg/rotate-device.svg') no-repeat center/cover;
+    background: url('../svg/rotate-device.svg') no-repeat center/cover;
     color: var(--white);
   }
 }
